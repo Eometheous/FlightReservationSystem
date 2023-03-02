@@ -1,0 +1,40 @@
+01 Af Bf Df Ef Ff Gf Kf Lf
+02 Af Bf Df Ef Ff Gf Kf Lf
+03 Af Bf Df Ef Ff Gf Kf Lf
+04 Af Bf Kf Lf
+16 D+ E+ F+ G+
+17 A+ B+ C+ D+ E+ F+ G+ J+ K+ L+
+18 A+ B+ C+ D+ E+ F+ G+ J+ K+ L+
+20 A+ B+ C+ D+ E+ F+ G+ J+ K+ L+
+21 A+ B+ C+ D+ E+ F+ G+ J+ K+ L+
+22 A+ B+ C+ D+ E+ F+ G+ J+ K+ L+
+23 A+ B+ C+ D+ E+ F+ G+ J+ K+ L+
+24 A+ B+ C+ De Ee Fe Ge J+ K+ L+
+25 A+ B+ C+ De Ee Fe Ge J+ K+ L+
+26 A+ B+ C+ De Ee Fe Ge J+ K+ L+
+27 Ae Be Ce De Ee Fe Ge Je Ke Le
+28 Ae Be Ce De Ee Fe Ge Je Ke Le
+29 Ae Be Ce De Ee Fe Ge Je Ke Le
+30 Ae Be Ce De Ee Fe Ge Je Ke Le
+31 Ae Be Ce De Ee Fe Ge Je Ke Le
+32 Ae Be Ce De Ee Fe Ge Je Ke Le
+33 Ae Be Ce De Ee Fe Ge Je Ke Le
+34 Ae Be Ce De Ee Fe Ge Je Ke Le
+35 Ae Be Ce De Ee Fe Ge Je Ke Le
+36 Ae Be Ce De Ee Fe Ge Je Ke Le
+37 Ae Be Ke Le
+39 A+ B+ C+ J+ K+ L+
+40 Ae Be Ce D+ E+ F+ G+ Je Ke Le
+41 Ae Be Ce De Ee Fe Ge Je Ke Le
+42 Ae Be Ce De Ee Fe Ge Je Ke Le
+43 Ae Be Ce De Ee Fe Ge Je Ke Le
+44 Ae Be Ce De Ee Fe Ge Je Ke Le
+45 Ae Be Ce De Ee Fe Ge Je Ke Le
+46 Ae Be Ce De Ee Fe Ge Je Ke Le
+47 Ae Be Ce De Ee Fe Ge Je Ke Le
+48 Ae Be De Ee Fe Ge Ke Le
+49 Ae Be De Ee Fe Ge Ke Le
+50 Ae Be De Ee Fe Ge Ke Le
+51 Ae Be De Ee Fe Ge Ke Le
+52 Ae Be De Ee Fe Ge
+53 De Ee Fe Ge
