@@ -1,6 +1,3 @@
-jonathan.sthomas@icloud.com
+jonathan.thomas@sjsu.edu
 Jonathan Thomas
-superAmazingPassword
-bSmith@gmail.com
-Bill Smith
-1234
+amazingPassword
