@@ -88,7 +88,7 @@ public class ReservationSystem {
             case "L" -> user = login();
             case "S" -> user = signUp();
         }
-        System.out.printf("Welcome %s\n", user.getName());
+        System.out.printf("Welcome %s\n", user.name());
         do {
             System.out.println("Check [A]availability  Make [R]eservation  [C]ancel Reservation   [V]iew Reservations  [D]one\n");
             choice = stdio.nextLine().toUpperCase();
@@ -113,7 +113,7 @@ public class ReservationSystem {
             String password = stdio.nextLine();
             if (userLogins.containsKey(email)) {
                 User user = userLogins.get(email);
-                if (user.getPassword().equals(password)) return user;
+                if (user.password().equals(password)) return user;
             }
             System.out.println("Wrong email/password");
         }
@@ -173,7 +173,7 @@ public class ReservationSystem {
         if (choice.equals("F")) {
             for (PlaneSeat seat : plane.getSeats(PlaneSeat.Type.FIRST_CLASS)) {
                 if (seat.getRow() == row && seat.getColumn() == column && !seat.isReserved()) {
-                    cl34.add(user.getName(), seat);
+                    cl34.add(user.name(), seat);
                     return;
                 }
             }
@@ -181,7 +181,7 @@ public class ReservationSystem {
         else if (choice.equals("P")) {
             for (PlaneSeat seat : plane.getSeats(PlaneSeat.Type.ECONOMY_PLUS)) {
                 if (seat.getRow() == row && seat.getColumn() == column && !seat.isReserved()) {
-                    cl34.add(user.getName(), seat);
+                    cl34.add(user.name(), seat);
                     return;
                 }
             }
@@ -189,7 +189,7 @@ public class ReservationSystem {
         else {
             for (PlaneSeat seat : plane.getSeats(PlaneSeat.Type.ECONOMY)) {
                 if (seat.getRow() == row && seat.getColumn() == column && !seat.isReserved()) {
-                    cl34.add(user.getName(), seat);
+                    cl34.add(user.name(), seat);
                     return;
                 }
             }
@@ -210,7 +210,7 @@ public class ReservationSystem {
             return;
         }
 
-        System.out.printf("Seats reserved by %s\n", user.getName());
+        System.out.printf("Seats reserved by %s\n", user.name());
         System.out.println(seats);
         System.out.println("Choose a seat to cancel (row column)");
         int row = stdio.nextInt();
@@ -218,7 +218,7 @@ public class ReservationSystem {
         stdio.nextLine();
         for (PlaneSeat seat : seats) {
             if (seat.getRow() == row && seat.getColumn() == column) {
-                cl34.cancel(user.getName(), seat);
+                cl34.cancel(user.name(), seat);
                 return;
             }
         }
@@ -230,7 +230,7 @@ public class ReservationSystem {
      * @param user {@code User} that is viewing their reserved seats.
      */
     private static void viewReservationsFor(User user) {
-        System.out.println(user.getName());
+        System.out.println(user.name());
         double balanceDue = 0;
         TreeSet<PlaneSeat> seats = cl34.getSeatsFor(user);
         if (seats == null) {
@@ -425,7 +425,7 @@ public class ReservationSystem {
         try {
             BufferedWriter cl34FileWriter = new BufferedWriter(new FileWriter(cl34File));
             for (User user : User.list) {
-                cl34FileWriter.write(user.getName());
+                cl34FileWriter.write(user.name());
                 cl34FileWriter.newLine();
 
                 TreeSet<PlaneSeat> seats = cl34.getSeatsFor(user);

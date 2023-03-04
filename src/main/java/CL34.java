@@ -53,6 +53,6 @@ public class CL34 {
      * {@code User}.
      */
     public TreeSet<PlaneSeat> getSeatsFor(User user) {
-        return reservations.get(user.getName());
+        return reservations.get(user.name());
     }
 }
